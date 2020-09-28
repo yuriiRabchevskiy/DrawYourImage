@@ -1,0 +1,9 @@
+<nav class="nav-bar">
+  <a *ngFor="let page of pages" class="nav-item" [class.active]="page.url === selectedPage"  routerLink="/{{page.url}}" (click)="selectPage(page.url)">{{page.title}}</a>
+</nav>
+<div class="layout">
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<app-loader></app-loader>

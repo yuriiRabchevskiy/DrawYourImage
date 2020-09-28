@@ -1,0 +1,4 @@
+<input style="display: none" type="file" (change)="onSelectFile($event)" #fileInput>
+<button (click)="fileInput.click()">Select File</button>
+<button (click)="parseImage()">Parse</button>
+

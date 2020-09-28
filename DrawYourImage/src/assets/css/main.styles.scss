@@ -1,0 +1,21 @@
+@import './global.scss';
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  border: 0px;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  font-size: 14px;
+  font-weight: normal;
+  color: $primaryText;
+  background: $appPrimaryBackground;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
